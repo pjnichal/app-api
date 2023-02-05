@@ -1,5 +1,5 @@
 <?php
-// http://localhost/uvi-user/app-api/getvalidators?user_id=987456&action=getvalidators
+// http://localhost/uvi-user/app-api/getvalidators.php?user_id=987456&action=getvalidators
 
     error_reporting(0);
     require_once "connection.php";
