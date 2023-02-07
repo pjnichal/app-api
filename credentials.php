@@ -20,7 +20,7 @@
             if ($query->execute()) {
                 $res = $query->get_result();
                 if (mysqli_num_rows($res) > 0) {
-                    $callback['msg'] = 'Email Already Registerd';
+                    $callback['msg'] = 'Email_Exists';
                 }
                 else{
                     
@@ -33,16 +33,16 @@
                         $callback['user_id'] = $link->insert_id;
                     }
                     else{
-                        $callback['msg'] = 'Somthing Went Worng';
+                        $callback['msg'] = 'ERROR';
                     }
                 }
             }
             else{
-                $callback['msg'] = 'Somthing Went Worng';
+                $callback['msg'] = 'ERROR';
             }
         }
         else{
-            $callback['msg'] = 'Invalid Mobile Number';
+            $callback['msg'] = 'Invalid_Mobo';
         }
         
 
