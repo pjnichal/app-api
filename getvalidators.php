@@ -19,12 +19,12 @@
       
         $json = array();
         $query = $link->prepare("SELECT `from_date`,`to_date`,`validating_parameter`,`is_ticket`  FROM `validator` WHERE `nfc_id` = ?");
-       
+        
         $query->bind_param("s",$data1[0]);
         if ($query->execute()) {
             
             $res = $query->get_result();
-          
+         
             // $row = mysqli_fetch_array($res);
             if(mysqli_num_rows($res) > 0){
                
