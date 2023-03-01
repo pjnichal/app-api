@@ -33,12 +33,13 @@
                         $callback['user_id'] = $link->insert_id;
                     }
                     else{
-                        $callback['msg'] = 'ERROR';
+                        
+                        $callback['msg'] = 'ERROR1';
                     }
                 }
             }
             else{
-                $callback['msg'] = 'ERROR';
+                $callback['msg'] = 'ERROR2';
             }
         }
         else{
